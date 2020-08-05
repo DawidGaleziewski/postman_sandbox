@@ -14,6 +14,10 @@ This will install all packages
 
 ```bash
 nodemon ./server.js
+or
+node ./server.js
+
+(eaither nodemon + node has to be installed or only node in second example)
 ```
 
 3. Import files ending in \*.json from /postman_sandbox/postman saves to your postman (top left corner grey import button)
