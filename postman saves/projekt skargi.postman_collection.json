@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "6fd2398b-34d7-4cbb-8ca6-60131bd8af23",
+		"name": "projekt skargi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "landing page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read compains",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/complains",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"complains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create complain ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"title\": \"TEST\",\r\n    \"name\": \"DUPA\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/complains",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"complains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read ONE request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/complains/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"complains",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete complain",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/complains/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"complains",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update complains",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"title\": \"Marian zjadl mydlo\",\r\n    \"name\": \"DUPA\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/complains/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"complains",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
